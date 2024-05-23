@@ -1,1 +1,9 @@
-org/example/Main.class
+com/example/catalogue/repositories/ArticleRepository.class
+com/example/demo/DemoApplication.class
+com/example/catalogue/repositories/CategoryRepository.class
+com/example/catalogue/entities/Category.class
+com/example/catalogue/controllers/ArticleController.class
+com/example/catalogue/entities/Tag.class
+com/example/catalogue/entities/Article.class
+com/example/catalogue/repositories/TagRepository.class
+com/example/catalogue/services/ArticleService.class

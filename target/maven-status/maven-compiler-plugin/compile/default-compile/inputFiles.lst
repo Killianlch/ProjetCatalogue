@@ -1,1 +1,9 @@
-/app/src/main/java/org/example/Main.java
+/app/src/main/java/com/example/catalogue/service/ArticleService.java
+/app/src/main/java/com/example/catalogue/entities/Tag.java
+/app/src/main/java/com/example/catalogue/repositories/ArticleRepository.java
+/app/src/main/java/com/example/catalogue/controllers/ArticleController.java
+/app/src/main/java/com/example/catalogue/entities/Category.java
+/app/src/main/java/com/example/demo/DemoApplication.java
+/app/src/main/java/com/example/catalogue/repositories/CategoryRepository.java
+/app/src/main/java/com/example/catalogue/entities/Article.java
+/app/src/main/java/com/example/catalogue/repositories/TagRepository.java
