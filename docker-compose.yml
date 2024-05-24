@@ -1,6 +1,7 @@
 services:
   postgresql:
     image: postgres:latest
+    container_name: postgresql-ProjetCatalogue
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
@@ -8,20 +9,21 @@ services:
     ports:
       - "5433:5432"
     volumes:
-          - webServiceAtelierPostgres:/var/lib/postgresql/data
+          - ProjetCataloguePostgres:/var/lib/postgresql/data
           - ./sql:/docker-entrypoint-initdb.d
 
   mongodb:
     image: mongo:latest
+    container_name: mongodb-ProjetCatalogue
     volumes:
-      - webServiceAtelierMongo:/data/db
+      - ProjetCatalogueMongo:/data/db
     environment:
-      MONGO_INITDB_DATABASE: webServiceAtelier_mongo
+      MONGO_INITDB_DATABASE: ProjetCatalogue_mongo
       MONGO_INITDB_ROOT_USERNAME: user
       MONGO_INITDB_ROOT_PASSWORD: password
     ports:
       - "27017:27017"
 
 volumes:
-  webServiceAtelierPostgres:
-  webServiceAtelierMongo:
+  ProjetCataloguePostgres:
+  ProjetCatalogueMongo:
