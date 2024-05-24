@@ -124,3 +124,5 @@ Assurez-vous que votre fichier `pom.xml` inclut les dépendances suivantes :
     </dependency>
 </dependencies>
 ```
+## Licence
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](/LICENSE) pour plus de détails.
