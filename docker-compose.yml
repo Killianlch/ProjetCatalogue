@@ -1,19 +1,6 @@
 version: '3.8'
 
 services:
-  springboot:
-    image: openjdk:21
-    container_name: springboot
-    depends_on:
-      - postgres
-      - mongo
-    ports:
-      - "8080:8080"
-    volumes:
-      - .:/app
-    working_dir: /app
-    command: ["./mvnw", "spring-boot:run"]
-
   postgres:
     image: postgres:latest
     container_name: postgres
@@ -22,7 +9,7 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_DB: mydb
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
 
