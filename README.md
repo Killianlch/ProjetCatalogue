@@ -8,7 +8,7 @@ Ce projet est une application Spring Boot qui utilise PostgreSQL et MongoDB pour
 
 - Docker
 - Docker Compose
-- Java 11
+- Java 21
 - Maven
 
 ## Installation et Exécution
@@ -20,26 +20,7 @@ git clone https://github.com/Killianlch/ProjetCatalogue.git
 cd ProjetCatalogue
 ```
 
-### 2. Créer le fichier `application.properties`
-
-Dans le répertoire `src/main/resources`, créez un fichier `application.properties` avec le contenu suivant :
-
-```properties
-# Configuration PostgreSQL
-spring.datasource.url=jdbc:postgresql://postgres:5433/mydatabase
-spring.datasource.username=myuser
-spring.datasource.password=mypassword
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-
-# Configuration MongoDB
-spring.data.mongodb.host=mongo
-spring.data.mongodb.port=27017
-spring.data.mongodb.database=mydatabase
-```
-
-### 3. Démarrer les conteneurs Docker
+### 2. Démarrer les conteneurs Docker
 
 Dans le répertoire racine du projet, exécutez la commande suivante :
 
@@ -49,11 +30,11 @@ docker-compose up
 
 Cette commande va démarrer les services PostgreSQL, MongoDB et l'application Spring Boot.
 
-### 4. Accéder à l'application
+### 3. Accéder à l'application
 
 - L'application Spring Boot sera accessible à l'adresse : `http://localhost:8080`.
 
-### 5. Tester les services
+### 4. Tester les services
 
 #### Services REST
 
