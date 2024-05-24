@@ -1,7 +1,6 @@
 services:
   postgresql:
     image: postgres:latest
-    container_name: test
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
@@ -14,7 +13,6 @@ services:
 
   mongodb:
     image: mongo:latest
-    container_name: mongodb-webServiceAtelier
     volumes:
       - webServiceAtelierMongo:/data/db
     environment:

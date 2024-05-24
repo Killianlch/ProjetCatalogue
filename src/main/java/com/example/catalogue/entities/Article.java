@@ -12,25 +12,22 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import java.util.Set;
 
+@Getter
 @Entity
 public class Article {
     @Id
-    @Getter
     @Setter
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Getter
     @Setter
     private String name;
 
-    @Getter
     @Setter
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
 
-    @Getter
     @Setter
     @ManyToMany
     @JoinTable(
@@ -40,11 +37,9 @@ public class Article {
     )
     private Set<Tag> tags;
 
-    @Getter
     @Setter
     private String description;
 
-    @Getter
     @Setter
     private String imageUrl;
 }
